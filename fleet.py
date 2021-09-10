@@ -3,10 +3,14 @@ from weapon import Weapon
 
 class Fleet:
     def __init__(self):
-        self.robot_one = Robot("General Grevious", Weapon)
-        self.robot_two = Robot("IG-88", Weapon)
-        self.robot_three = Robot("C3PO", Weapon)
+        self.robot = []
+        self.create_fleet()
 
-        self.weapon_one = Weapon("Lightsaber")
-        self.weapon_two = Weapon("Blaster")
-        self.weapon_three = Weapon("Laser")
+    def create_fleet(self):
+        robo1 = Robot("IG-88")
+        robo2 = Robot("General")
+        robo3 = Robot("R2D2")
+
+        self.robot.append(robo1)
+        self.robot.append(robo2)
+        self.robot.append(robo3)
