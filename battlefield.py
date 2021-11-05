@@ -1,5 +1,9 @@
 from fleet import Fleet
 from herd import Herd
+from weapon import Weapon
+from dino import Dinosaur
+from robot import Robot
+
 
 class Battlefield:
     def __init__(self):
