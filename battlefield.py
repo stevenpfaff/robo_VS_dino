@@ -23,10 +23,27 @@ class Battlefield:
         print(Fleet())
 
     def dino_turn(self, Dinosaur):
-        pass
+           print(
+            "Which Robot would you like to attack?\nIG-88: Health=100 ",
+            self.fleet.robots[0].health,
+            "\nGeneral: Health=100 ",
+            self.fleet.robots[1].health,
+            "\nR2D2: Health=100 ",
+            self.fleet.robots[2].health,
+        )
 
     def robot_turn(self, Robot):
-        pass
+        print(
+            "Which Dinosaur would you like to attack?\nScoop: Health=60 ",
+            self.herd.dinosaurs[0].health,
+            "\nMonty: Health=60 ",
+            self.herd.dinosaurs[1].health,
+            "\nRex: Health=60 ",
+            self.herd.dinosaurs[2].health,
+        )
     
-    def display_winner(self):
-        print("Robo/Dino Wins!")
+    def display_winners(self, winner):
+        if winner == "dino":
+            print("Dinos Win!")
+        elif winner == "robo":
+            print("Robots Win!")
