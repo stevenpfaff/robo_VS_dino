@@ -20,7 +20,7 @@ class Battlefield:
         print(Herd())
     
     def show_robot_opponent_options(self):
-        print(Fleet)
+        print(Fleet())
 
     def dino_turn(self, Dinosaur):
         pass
