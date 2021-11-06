@@ -2,7 +2,7 @@ from dino import Dino
 
 class Herd:
     def __init__(self):
-        self.Dinosaur = []
+        self.dino = []
         self.create_herd()
 
     def create_herd(self):
@@ -10,6 +10,6 @@ class Herd:
         dino2 = Dino("Monty", 60)
         dino3 = Dino("Rex", 60)
 
-        self.Dinosaur.append(dino1)
-        self.Dinosaur.append(dino2)
-        self.Dinosaur.append(dino3)
+        self.Dino.append(dino1)
+        self.Dino.append(dino2)
+        self.Dino.append(dino3)
