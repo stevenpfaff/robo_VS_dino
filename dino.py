@@ -1,6 +1,6 @@
 from robot import Robot
 
-class Dinosaur:
+class Dino:
     def __init__(self, name, attack_power):
         self.name = name
         self.health = 80

@@ -1,7 +1,7 @@
 from fleet import Fleet
 from herd import Herd
 from weapon import Weapon
-from dino import Dinosaur
+from dino import Dino
 from robot import Robot
 
 
@@ -11,36 +11,22 @@ class Battlefield:
         self.herd = Herd()
 
     def run_game(self):
-        pass
+        self.display_welcome()
+        self.display_winners()
     
     def display_welcome(self):
         print("Welcome to Robots Versus Dinosaurs")
 
     def show_dino_opponent_options(self):
-        print(Herd())
+        pass
     
     def show_robot_opponent_options(self):
-        print(Fleet())
+        pass
 
-    def dino_turn(self, Dinosaur):
-           print(
-            "Which Robot would you like to attack?\nIG-88: Health=100 ",
-            self.fleet.robots[0].health,
-            "\nGeneral: Health=100 ",
-            self.fleet.robots[1].health,
-            "\nR2D2: Health=100 ",
-            self.fleet.robots[2].health,
-        )
-
+    def dino_turn(self, Dino):
+        pass
     def robot_turn(self, Robot):
-        print(
-            "Which Dinosaur would you like to attack?\nScoop: Health=60 ",
-            self.herd.dinosaurs[0].health,
-            "\nMonty: Health=60 ",
-            self.herd.dinosaurs[1].health,
-            "\nRex: Health=60 ",
-            self.herd.dinosaurs[2].health,
-        )
+        pass
     
     def display_winners(self, winner):
         if winner == "dino":
